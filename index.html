@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Aller en échange</title>	  	
+    <link rel="shortcut icon" href="file:///E:/Coding/Portofilio/logos/FEMSAicon.png" type="image/x-icon">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+<style type="text/css">
+	
+	
+	#logo {width: 5em;
+		}
+	
+	h2 	{color: #0F1A20;
+		}
+	h3  {color: #D00000;
+		}
+		
+	.logocomittee  {width: 5em;
+		} 	
+	footer 	{background: rgb(192, 192, 192);
+		}
+		
+	nav {font-size: 130%;
+		display: flex;
+		}	
+
+
+	.fa-ban {
+		color:#D00000;
+		}	
+	.fa-check {
+		color:#388E3C;	
+		}
+	.fa-comments {
+		color:#2f4a9b;
+		}	
+
+	.fa-check-circle-o {
+		color:#388E3C;	
+		}
+
+	.fa-check-square-o {
+		color:#388E3C;	
+		}
+
+	.fa-calendar-check-o {
+		color:#388E3C;	
+		}
+
+	.fa-book {
+		color:#2f4a9b;
+		}
+	.important 	{
+		border-radius: 2%;
+		background: #F1E9DB;
+		border-left: solid #435058;
+		margin: 2%;
+		padding: 1%;
+		}
+	main 	{margin-bottom: 100px;
+		}
+	
+	summary {font-size: 150%; color: #212529;}
+#definitions summary 	{font-size: 150%; 
+		}	
+
+#definitions p {color: #0F1A20; font-size: 125%; 
+		}
+ 
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 { 
+  top: 0; 
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.ml5 {
+  position: relative;
+  font-weight: 300;
+  font-size: 4.5em;
+  color: #402d2d;
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+
+.ml5 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background-color: #402d2d;
+  transform-origin: 0.5 0;
+}
+
+.ml5 .ampersand {
+  font-family: Baskerville, serif;
+  font-style: italic;
+  font-weight: 400;
+  width: 1em;
+  margin-right: -0.1em;
+  margin-left: -0.1em;
+}
+
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
+}
+
+.ml12 {
+
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+</style>
+</head>
+
+<body>
+<header>
+			
+
+<nav class="nav sicky-top navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-brand mr-0 mr-md-2" href="#"><img id="logo" src="file:///E:/Coding/Portofilio/logos/FEMSAicon.png" alt="Logo FeMSA"></a>
+  	<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  	</button>
+  	<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+  		<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+   		 <li class="nav-item active"><a class="nav-link" href="file:///E:/Coding/Portofilio/index.html">Acceuil <span class="sr-only">(current)</span></a></li>
+   		 <li class="nav-item"><a class="nav-link" href="file:///E:/Coding/Portofilio/À propos.html">À propos</a></li>
+  		 <li class="nav-item"><a class="nav-link" href="file:///E:/Coding/Portofilio/Liens utiles.html">Liens utiles</a></li>
+  		</ul>
+  	</div>	
+  		 
+</nav>  
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+  </ol>
+
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1033&q=80" alt="First slide">
+      	<div class="carousel-caption d-none d-md-block">
+    		<h2>Choisissez votre prochaine destination</h2>
+  		</div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://images.unsplash.com/photo-1554224155-1696413565d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Second slide">
+      <div class="carousel-caption d-none d-md-block">
+    	<h2>Préparez votre dossier de candidature</h2>
+  		</div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://images.unsplash.com/photo-1580281780460-82d277b0e3f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Third slide">
+      <div class="carousel-caption d-none d-md-block">
+   		 <h2>Découvrez de nouveaux systèmes de santé</h2>
+ 	 </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Fourth slide">
+      <div class="carousel-caption d-none d-md-block">
+    	<h2>Faîtes votre premier pas dans le monde de la recherche médicale</h2>
+ 		 </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80" alt="Fifth slide">
+      <div class="carousel-caption d-none d-md-block">
+    		<h2 style="color: #ffffff;">Faîtes vous des amis dans les quatres coins du monde</h2>
+  	</div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Sixth slide">
+      <div class="carousel-caption d-none d-md-block">
+    	<h2 style="color: #ffffff;">Qu'attendez-vous? Commencez à préparer votre dossier de candidature maintenant!</h2>
+  	  </div>
+    </div>
+  </div>
+ </div>
+  
+
+
+	<h1 style="color: #0F1A20; padding-left: 3%; padding-bottom: 3%; padding-top: 3%; margin-bottom: 2%; background: #D0D8DC;">Un échange? Ça se prépare!</h1>
+
+</header>
+<main>
+	<div style="margin: 5%">
+		<p>Nous avons rassemblé tout ce dont vous aurez besoin pour commencer votre procédure d'échange: Des indications qui vous seront indispensables sont regroupées dans les sections de cette plateforme. Veuillez les lire attentivement.</p>
+		<p>Ceci est une occasion incontournable pour un étudiant en médecine de non seulement faire un stage clinique (SCOPE) ou un stage d'initiation à la recherche médicale (SCORE) (pour une durée de 4 semaines à l'étranger), mais aussi de rencontrer des étudiants en médecine du monde entier.</p>
+	</div>
+	<div style="height: 400px;"><h2 style="color: #0F1A20; padding-left: 3%; padding-bottom: 3%; padding-top: 3%; margin-bottom: 2%; background: #D0D8DC;">C'est quoi un échange?</h2>
+		<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div style="background: #FF8585; margin: 3%; padding: 2%; padding-bottom: 4%; padding-top: 4%; border-left: 2px; font-size: 2em;" class="ml11" id="no"> <i class="fa fa-ban fa-1x"></i>  <strong style="color: #D00000;"> Les échanges ne sont pas : </strong><span class="text-wrapper"><span class="line line1"></span><span class="letters"> des vacances, un moyen pour voyager à bas prix.</span>
+		</div>
+    </div>
+    <div class="carousel-item">
+      <div style="margin:3%; background: #B6E2B8; padding: 2%; padding-bottom: 4%; padding-top: 4%; font-size: 1.5em; border-left: 2px; margin-bottom: 5px; margin-top: 5px;" id="yes"><i class="fa fa-check fa-1x"></i><strong style="color: #388E3C;"> Les échanges sont : </strong><span class="ml12"> Une opportunité pour découvrir un nouveau pays, un système de santé différent et des étudiants de différentes cultures.</span>
+		</div>
+    </div>
+    <div class="carousel-item">
+      <div style="text-align: center; background: #0181c1; font-size: 2em;  border-left: #D00000; margin: 3%; padding: 2%; color: #ffffff; padding-bottom: 4%; padding-top: 4%;" class="ml5"><span class="text-wrapper">
+    
+    <span class="letters letters-left">Les échanges sont un contrat de stage professionnel (SCOPE) </span>
+    <span class="letters ampersand">ou</span>
+    <span class="letters letters-right"> de recherche (SCORE) d'une durée de 4 semaines, non rémunéré. </span>
+    
+  </span></div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div id="tableofcontent">
+
+
+	<nav class="nav navbar-expand-lg navbar-dark bg-dark">
+		<span class="navbar-brand mr-0 mr-md-2" style="color: #D00000; padding: 3%; font-size: 150%;">Table of content</span>
+  		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="padding: 3%">
+  			<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+   		 		<li class="nav-item"><a class="nav-link" href="file:///E:/Coding/Portofilio/Contrats d'échange.html">Contrats d'échange <span class="sr-only">(current)</span></a></li>  		 
+   		 		<li class="nav-item"><a class="nav-link" href="file:///E:/Coding/Portofilio/Procédure.html">Procédure</a></li>
+  		 		<li class="nav-item"><a class="nav-link" href="file:///E:/Coding/Portofilio/FAQs.html">FAQs</a></li>
+		 
+  		 		<li class="nav-item"><a class="nav-link" href="file:///E:/Coding/Portofilio/Témoignages.html">Témoignages</a></li>  		 
+  		 	</ul>
+  		</div>
+	</nav> 
+</div>
+
+<div>
+	<h2 style="color: #0F1A20; padding-left: 3%; padding-bottom: 3%; padding-top: 3%; margin-bottom: 2%; background: #D0D8DC;">Des définitions à connaître</h2>
+	<div id="definitions" class="container">
+		<div class="row">
+			<div class="col-sm-6">
+	<details>
+		<summary>
+			IFMSA
+		</summary>
+		<p>IFMSA est la fédération internationale des associations des étudiants en médecine. Elle
+regroupe plusieurs NMOs de plus d’une centaine de pays. Les membres d’IFMSA se
+rassemblent durant deux assemblées générales : En août (August Meeting : AM) et en mars
+(March Meeting : MM).</p>
+	</details>
+
+
+	<details>
+		<summary>
+			National Member Organization (NMO)
+		</summary>
+		<p>Association nationale d’étudiants en médecine,
+qui représente tous ou une partie des étudiants en médecine d'un pays. Chaque NMO est
+membre d'IFMSA et il peut y avoir plus d’une NMO par pays.
+IFMSA-Morocco : NMO du Maroc, qui a été acceptée comme membre candidat de l’IFMSA
+en Août 2012 et comme membre à part entière en Mars 2014.</p>
+	</details>
+
+	<details>
+		<summary>
+			Local Committee (LC)
+		</summary>
+		<p>Association représentant des étudiants en médecine d’une ville
+ou d’une faculté. Une ville peut avoir plus d'un comité local.</p>
+<ul>
+<li>Medec'IN Casa : LC de Casablanca</li>
+<li>Méd’Ociation : LC de Rabat</li>
+<li><strong>FEMSA : LC de Fès</strong></li>
+<li>UCEMO : LC d’Oujda</li>
+<li>AEM-Marrakech : LC de Marrakech.</li>
+<li>MSAA : LC d’Agadir</li></ul>
+	</details>
+
+	<details>
+		<summary>
+			Candidats
+		</summary>
+		<p>Tous les étudiants en médecine de Fès, Oujda, Rabat, Marrakech et
+Casablanca souhaitant prendre part à un échange via le comité SCOPE/SCORE.<br><strong>*Tout candidat devra se conformer aux conditions d'échange des NMOs choisies.
+Celles-ci n'acceptant parfois que les étudiants de certaines années d'études (étudiants du
+deuxième cycle par exemple), il se peut que certaines destinations ne soient pas
+accessibles à tous.(cf. <a href="file:///E:/Coding/Portofilio/Liens utiles.html">Liens utiles</a>)</strong></p>
+	</details>
+
+	<details>
+		<summary>
+			Outgoings (OG)
+		</summary>
+		<p>Les candidats qui ont réussi les étapes de sélection et qui sont
+acceptés pour participer aux échanges (critères de sélection cf. <a href="file:///E:/Coding/Portofilio/Liens utiles.html">Liens utiles</a>)</p>
+	</details>
+
+	<details>
+		<summary>
+			Incomings (IC)
+		</summary>
+		<p>Les étudiants étrangers sélectionnés par la NMO de leur pays
+d’origine pour prendre part à un échange au Maroc.</p>
+	</details>
+
+	<details>
+		<summary>
+			Contact Person (CP)
+		</summary>
+		<p>Étudiant en médecine faisant partie du comité local (LC) accueillant
+un incoming. Il constitue la principale personne de contact de cet incoming et se charge
+notamment de tâches logistiques (aller le chercher à l’aéroport/gare, l’accompagner à son
+lieu de résidence, à son stage le premier jour, lui montrer les coins de repère dans la ville,
+etc). Il peut également être en charge de loger et de nourrir l’étudiant s’il reçoit une
+compensation par le comité local : ajout de points dans son dossier d’inscription de la saison
+d’échange de l’année suivante, soutien financier, etc. ...</p>
+	</details>
+
+	<details>
+		<summary>
+			Local Officer (LEO/LORE)
+		</summary>
+		<p>Responsable local du programme SCOPE/SCORE.<br>Le LEO/LORE est responsable du programme d’échange, au niveau de son comité
+local, auprès d’IFMSA-Morocco et est donc l’interlocuteur privilégié du NEO/NORE.<br>C’est au LEO/LORE seul que les étudiants du comité local doivent s’adresser pour
+une quelconque information concernant le programme d’échange. Si celui-ci n’est pas en
+mesure de répondre (absent), et seulement dans ce cas, il demande alors l’avis du
+NEO/NORE.</p>
+	</details>
+
+	<details>
+		<summary>
+			National Officer (NEO/NORE)
+		</summary>
+		<p>Responsable national du programme SCOPE-
+SCORE, et donc membre de l'équipe des officiels d'IFMSA-Morocco. Il signe les contrats d'échange lors du August Meeting et reçoit les lettres d'invitations des OG de son NMO de la part des autres NMO lors du March Meeting.</p>
+	</details>
+</div>
+<div class="col-sm-6">
+
+	<details>
+		<summary>
+			SCOPE-D (SCOPE-Director)/ SCORE-D (SCORE-Director)
+		</summary>
+		<p>Chargés de la
+coordination internationale des programmes d’échanges. Ce sont des « Officials » de
+l’IFMSA, qui font donc partie de l’équipe internationale de l’IFMSA.</p>
+	</details>
+
+	<details>
+		<summary>
+			Contrat d’échange
+		</summary>
+		<p>Accord entre deux associations nationales d’étudiants en
+médecine adhérentes à l’IFMSA et accréditées par l’IFMSA pour la participation au
+programme d’échanges concerné. Il correspond à un échange de quatre semaines.<br>Il peut être <strong>bilatéral</strong>. Il correspond alors à l'accueil d'un étudiant étranger contre
+l'envoi d'un étudiant marocain, pour un échange de 4 semaines. Son coût pour un outgoing
+ou incoming ainsi que les modalités de paiement sont fixés par la NMO d'origine de
+l'étudiant.<br>Il peut être <strong>unilatéral</strong>. Il correspond alors à l’accueil ou l'envoi univoque d'un étudiant
+pendant 4 semaines. Son coût pour un outgoing ou incoming ainsi que les modalités de
+paiement sont fixés par la NMO d'accueil recevant l'étudiant.<br>Il est valable toute la durée d’une <strong>saison d'échange</strong> SCOPE/SCORE (une année,
+du 1er avril au 31 mars de l'année suivante).</p>
+	</details>
+
+	<details>
+		<summary>
+			ECs (Exchange Conditions)
+		</summary>
+		<p>Conditions d’échanges fixées par les NEOs/NOREs au
+niveau de chaque pays, que les Incomings doivent obligatoirement respecter (cf. <a href="file:///E:/Coding/Portofilio/Liens utiles.html">Liens utiles</a>).</p>
+	</details>
+
+	<details>
+		<summary>
+			AF (Application Form)
+		</summary>
+		<p>formulaire de candidature d’un Outgoing récapitulant
+notamment diverses informations générales (nom, prénom, etc.), la période désiré pour le
+stage, les villes désirées, et les services hospitaliers désirés.<br>Il est recommandé à l’Outgoing d’envoyer le plus tôt possible son AF afin d’avoir plus
+de chance d’obtenir le service/projet, la ville et date de leur choix.</p>
+	</details>
+
+	<details>
+		<summary>
+			CA (Card of Acceptante)
+		</summary>
+		<p>Promesse d’accueil par le comité local, rédigée par le
+LEO/LORE sur le site www.ifmsa.org, ayant une valeur réglementaire au niveau de l’IFMSA.<br>Elle reprend la période d'accueil définitive, la ville et le service dans lesquels
+l'étudiant a été accepté, les noms et coordonnées des personnes contacts dans le comité
+local d'accueil. Notez que, vu le nombre énorme d’étudiants partant en échange chaque
+mandat, il se peut que votre service/Projet et ville définitifs ne figurent pas parmi vos choix
+initiaux.</p>
+	</details>
+
+	<details>
+		<summary>
+			CC (Card of Confirmation)
+		</summary>
+		<p>Confirmation rédigée sur www.ifmsa.org par l’Outgoing
+comportant les informations de son arrivée au comité local d’accueil.</p>
+	</details>
+
+	<details>
+		<summary>
+			EF (Evaluation Form)
+		</summary>
+		<p>Evaluation de l’échange rédigée par l’Incoming sur le site
+www.ifmsa.org pour l’échange effectué, et formulaire de témoignage. Elle permet l’obtention
+de statistiques internationales anonymes, dans l’optique d’une amélioration des programmes
+d'échange.<br>
+Il est impératif d’envoyer la EF avant la fin de l’échange ; au cas de non envoie de cette
+dernière, le comité local se réserve le droit d’appliquer des sanctions.</p>
+	</details>
+
+	<details>
+		<summary>
+			Certificat IFMSA
+		</summary>
+		<p>Attestation signée par le tuteur de stage et par le LEO/LORE ou
+NEO/NORE des pays d'origine et d'accueil, dans le cas où l'échange s'est parfaitement
+déroulé de l'AF à l'EF (pourcentage d'absence au service inférieur à 20% de la période
+totale d'échange...), et remise à l’incoming pour valoir ce que de droit.</p>
+	</details>
+
+	<details>
+		<summary>
+			Explore
+		</summary>
+		<p>Page Web Explore où chaque NEO/NORE remplit toutes les informations
+nécessaires sur son pays, et où chaque LEO/LORE remplit toutes les informations
+nécessaires concernant sa ville. Elle est accessible via le lien suivant :
+www.ifmsa.org/explore</p>
+
+	</details>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<hr>
+	
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6">
+			<h3 style="font-size: 150%; color: #0181c1;"><img class="logocomittee" style="width: 20%;" src="file:///E:/Coding/Portofilio/logos/LittleSCOPE.png" alt="Logo SCOPE">Échanges SCOPE:</h3>
+			<details>
+					<summary>Stage pré-clinique</summary>
+					<p>Stage hospitalier destiné à des étudiants du 1er cycle</p>
+				</details>
+				<details>
+					<summary>Stage clinique</summary>
+					<p>Stage hospitalier destiné aux étudiants du 2ème et du 3ème cycle, rarement à ceux du 1er cycle.</p>
+				</details>
+				
+		</div>
+		<div class="col-sm-6">
+			<h3 style="font-size: 150%; color: #2e4a9c;"><img class="logocomittee" style="width: 20%;" src="file:///E:/Coding/Portofilio/logos/LittleSCORE.png" alt="Logo SCORE"> Échanges SCORE</h3>
+			<details>
+					<summary>Clinical Project without Laboratory work</summary>
+					<p>Pour un premier contact avec le monde de la recherche sans pour autant se détacher de la clinique.</p>
+				</details>
+				<details>
+					<summary>Clinical Project with Laboratory work</summary>
+					<p>Pour marier recherche au sein d’un laboratoire et essais cliniques (et donc encore plus d’immersion dans le domaine de la recherche).</p>
+				</details>
+				<details>
+					<summary>Basic science</summary>
+					<p>Les étudiants de tous les cycles peuvent en bénéficier dans la mesure où ils ont acquis les connaissances de base des sciences fondamentales requises à la compréhension du projet (ces conditions sont d’ailleurs mentionnées dans le site d’IFMSA, rubrique des conditions d’échange).</p>
+				</details>
+				<details>
+					<summary>Global action projects (GAP)</summary>
+					<p>Des projets autour du thème de la santé globale.</p>
+				</details>
+			
+		</div>
+	</div>
+</div>
+
+<div>
+	<h2 style="color: #0F1A20; padding-left: 3%; padding-bottom: 3%; padding-top: 3%; margin-bottom: 2%; background: #D0D8DC; margin-top: 3%;">Très important</h2>
+
+	<div class="important">
+		<h3>Avant de choisir un pays:</h3>
+		<p><i class="fa fa-check-square-o fa-1x"></i> Vérifiez que votre année d'étude vous permet de faire un échange dans ce pays.</p>
+		<p><i class=" fa fa-calendar-check-o fa-1x"></i> Vérifiez que le pays peut vous accueillir à une période d'échange que vous souhaitez.</p>
+		<p><i class="fa fa-book fa-1x"></i> Assurez-vous que le règlement mis en place par le pays vous convient.</p>
+	</div>
+
+	<div class="important">
+		<h3>Avant de choisir un projet de recherche:</h3>
+		<p><i class="fa fa-check-square-o fa-1x"></i> Vérifiez que votre année d'étude vous permet de choisir le projet.</p>
+		<p><i class=" fa fa-calendar-check-o fa-1x"></i> Vérifiez que le projet est disponible durant la période de stage sélectionnée.</p>
+	</div>
+
+
+
+</div>
+
+	<p style="background: rgb(192, 192, 192); padding: 2px; margin: 5px; border-radius: 5px; font-size: 2em;"><i class="fa fa-warning" style="color: #D00000;"></i> Les informations requises sont toutes précisées dans les "conditions d'échange" de chaque NMO. (cf. Liens utiles)</p>
+</main>
+
+<footer style="padding: 3%;">
+	<span style="font-size: 130%;"> &#169; Femsa 2020 </span> <span style="font-size: 130%;"> - Developped by <a href="https://www.linkedin.com/in/sanae-m-593b23138" target="_blank">Sanae MAJDOULI</a></span>
+	<a style="float: right; margin-right: 2%;" href="https://www.facebook.com/femsa.ifmsa/" aria-label="facebook" target="_blank"><i class="fa fa-facebook-official fa-2x" style="color: #212529;"></i></a>
+	<a style="float: right; margin-right: 2%;" href="https://instagram.com/femsa.fez?igshid=dcl7l15lctuj&fbclid=IwAR3TYrj8CEoD6Ka-RRNUjMw5IMs8vqM_XZN4N9j06J-hj1RZ12PQPdXBAtc" aria-label="instagram" target="_blank"><i class="fa fa-instagram fa-2x" style="color: #212529;"></i></a>
+	<a style="float: right; margin-right: 2%;" href="mailto:femsafez@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x" style="color: #212529;"></i></a>
+</footer>
+<script type="text/javascript">
+	var textWrapper = document.querySelector('.ml11 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml11 .line',
+    scaleY: [0,1],
+    opacity: [0.5,1],
+    easing: "easeOutExpo",
+    duration: 700
+  })
+  .add({
+    targets: '.ml11 .line',
+    translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+    easing: "easeOutExpo",
+    duration: 700,
+    delay: 100
+  }).add({
+    targets: '.ml11 .letter',
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=775',
+    delay: (el, i) => 34 * (i+1)
+  }).add({
+    targets: '.ml11',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1900
+  });
+</script>
+<script type="text/javascript">
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml5 .line',
+    opacity: [0.5,1],
+    scaleX: [0, 1],
+    easing: "easeInOutExpo",
+    duration: 700
+  }).add({
+    targets: '.ml5 .line',
+    duration: 600,
+    easing: "easeOutExpo",
+    translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
+  }).add({
+    targets: '.ml5 .ampersand',
+    opacity: [0,1],
+    scaleY: [0.5, 1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml5 .letters-left',
+    opacity: [0,1],
+    translateX: ["0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=300'
+  }).add({
+    targets: '.ml5 .letters-right',
+    opacity: [0,1],
+    translateX: ["-0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml5',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeInExpo",
+    delay: 3900
+  });
+  </script>
+ <script type="text/javascript">
+ 	// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml12');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml12 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 1000 + 30 * i
+  }).add({
+    targets: '.ml12 .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1700,
+    delay: (el, i) => 100 + 30 * i
+  });
+ </script> 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</body>
+</html>
+
+
+
